@@ -1,0 +1,14 @@
+﻿<Window x:Class="ExBtnTextBlock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExBtnTextBlock"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Window Width="600" Height="250"></Window>
+        <TextBlock Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet mi ut nulla interdum lacinia. Nullam accumsan quam sed ultrices fringilla. Curabitur maximus ultricies felis, nec sollicitudin leo viverra eget. Duis porta suscipit efficitur. Pellentesque vehicula libero quis nisl iaculis, sed fringilla tortor congue. Mauris tempor magna eget dignissim consectetur. Donec malesuada et nunc eu eleifend." HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Margin="0,0,0,150" Width="600"></TextBlock>
+        <TextBlock Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet mi ut nulla interdum lacinia. Nullam accumsan quam sed ultrices fringilla. Curabitur maximus ultricies felis, nec sollicitudin leo viverra eget. Duis porta suscipit efficitur. Pellentesque vehicula libero quis nisl iaculis, sed fringilla tortor congue. Mauris tempor magna eget dignissim consectetur. Donec malesuada et nunc eu eleifend." HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Margin="0,150,0,0" Width="600"></TextBlock>
+    </Grid>
+</Window>
