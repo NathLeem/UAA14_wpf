@@ -5,11 +5,121 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculatrice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="400">
+        Title="MainWindow" Height="600" Width="400" Background="Gray">
     <Grid>
-        <StackPanel Background="Gray">
-            <Canvas Background="White" HorizontalAlignment="Left" Margin="10" Width="300" Height="100"/>
-            <Button Width="50" Height="50" Background="Red" Content="C"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right">
+            <TextBlock Background="White" Height="100" Width="90"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+            <TextBlock Background="White" Height="100"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="2" VerticalAlignment="Center">
+            <TextBlock Background="White" Height="100"></TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Column="3" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="Red">
+                <Bold FontSize="30">C</Bold>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="LightBlue">
+                <Bold FontSize="50">1</Bold>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="LightBlue">
+                <Bold FontSize="50">2</Bold>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="1" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="LightBlue">
+                <Bold FontSize="50">3</Bold>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="3" Grid.Row="1" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="Green">
+                <Bold FontSize="50">+</Bold>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="LightBlue">
+                <Bold FontSize="50">4</Bold>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="LightBlue">
+                <Bold FontSize="50">5</Bold>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="2" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="LightBlue">
+                <Bold FontSize="50">6</Bold>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="3" Grid.Row="2" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="Green">
+                <Bold FontSize="50">-</Bold>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="LightBlue">
+                <Bold FontSize="50">7</Bold>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="3" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="LightBlue">
+                <Bold FontSize="50">8</Bold>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="3" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="LightBlue">
+                <Bold FontSize="50">9</Bold>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="3" Grid.Row="3" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="Green">
+                <Bold FontSize="50">/</Bold>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="LightCyan">
+                <Bold FontSize="50">,</Bold>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="4" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="LightBlue">
+                <Bold FontSize="50">0</Bold>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="4" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="Green">
+                <Bold FontSize="50">*</Bold>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="3" Grid.Row="4" VerticalAlignment="Center">
+            <Button Height="80" Width="80" Background="Yellow">
+                <Bold FontSize="50">=</Bold>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>
