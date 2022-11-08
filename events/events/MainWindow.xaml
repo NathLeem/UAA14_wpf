@@ -22,21 +22,25 @@
         <TextBlock FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Bold>A</Bold>
         </TextBlock>
-        <TextBlock Margin="100,0,0,0" Width="200" Height="100" Background="White" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TxtA" Margin="100,0,0,0" Width="200" Height="100" Background="White" Grid.ColumnSpan="2"/>
 
         <TextBlock Grid.Row="1" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Bold>B</Bold>
         </TextBlock>
-        <TextBlock Grid.Row="1" Margin="0,0,100,0" Grid.ColumnSpan="2" Grid.Column="1" Width="200" Height="100" Background="White"></TextBlock>
+        <TextBox x:Name="TxtB" Grid.Row="1" Margin="100,0,0,0" Width="200" Height="100" Background="White" Grid.ColumnSpan="2"/>
 
         <TextBlock Grid.Row="2" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Bold>C</Bold>
         </TextBlock>
-        <TextBlock Grid.Row="2" Grid.Column="1" Width="200" Height="100" Background="White"></TextBlock>
+        <TextBox x:Name="TxtC" Grid.Row="2" Margin="100,0,0,0" Width="200" Height="100" Background="White" Grid.ColumnSpan="2"/>
 
 
-        <Button Grid.Row="3" FontSize="40" Height="60" Width="200" Grid.ColumnSpan="2" Margin="100,23,100,23">
+        <Button x:Name="btnCalcule" Grid.Row="3" FontSize="40" Height="60" Width="200" Grid.ColumnSpan="2" Margin="10,23,100,23">
             <Bold>CALCULER</Bold>
+        </Button>
+
+        <Button x:Name="btnV" Grid.Row="3" FontSize="40" Height="60" Width="60" Grid.ColumnSpan="2" Margin="300,23,0,23" Visibility="Hidden">
+            <Bold>V</Bold>
         </Button>
     </Grid>
 </Window>

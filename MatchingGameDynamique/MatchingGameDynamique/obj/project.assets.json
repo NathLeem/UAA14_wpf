@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\200253.asty-moulin\\.nuget\\packages\\": {},
+    "C:\\Users\\200253.asty-moulin.000\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -17,14 +17,14 @@
       "projectUniqueName": "H:\\6TI\\Progra\\ExGit\\UAA14\\UAA14_wpf\\MatchingGameDynamique\\MatchingGameDynamique\\MatchingGameDynamique.csproj",
       "projectName": "MatchingGameDynamique",
       "projectPath": "H:\\6TI\\Progra\\ExGit\\UAA14\\UAA14_wpf\\MatchingGameDynamique\\MatchingGameDynamique\\MatchingGameDynamique.csproj",
-      "packagesPath": "C:\\Users\\200253.asty-moulin\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\200253.asty-moulin.000\\.nuget\\packages\\",
       "outputPath": "H:\\6TI\\Progra\\ExGit\\UAA14\\UAA14_wpf\\MatchingGameDynamique\\MatchingGameDynamique\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\200253.asty-moulin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\200253.asty-moulin.000\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

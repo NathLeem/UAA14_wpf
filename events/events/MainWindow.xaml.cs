@@ -23,6 +23,45 @@ namespace events
         public MainWindow()
         {
             InitializeComponent();
+            TxtA.PreviewTextInput += new TextCompositionEventHandler(VerifTextInput);
+            TxtB.PreviewTextInput += new TextCompositionEventHandler(VerifTextInput);
+            TxtC.PreviewTextInput += new TextCompositionEventHandler(VerifTextInput);
+            btnCalcule.MouseEnter += new MouseEventHandler(SurvolBtn);
+            btnCalcule.MouseLeave += new MouseEventHandler(QuitteBtn);
+        }
+
+        public void VerifTextInput(object sender,TextCompositionEventArgs e)
+        {
+            if (e.Text != "," && !EstEntier(e.Text))
+            {
+                e.Handled = true;
+            }
+            if (((TextBox)sender).Text.IndexOf(e.Text)>-1)
+            {
+                
+            }
+        }
+
+        private bool EstEntier(string texteUser)
+        {
+            int text;
+            bool entier = false;
+            
+            if (int.TryParse(texteUser, out text))
+            {
+                entier = true;
+            }
+            return entier;
+        }
+
+        public void SurvolBtn(object sender ,MouseEventArgs e)
+        {
+            btnV.Visibility = Visibility.Visible;
+            btnV.Background = Brushes.Red;
+        }
+        public void QuitteBtn(object sender ,MouseEventArgs e)
+        {
+            btnV.Visibility = Visibility.Hidden;
         }
     }
 }
