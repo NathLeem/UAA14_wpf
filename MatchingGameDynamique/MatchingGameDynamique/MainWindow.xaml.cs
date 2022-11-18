@@ -47,6 +47,7 @@ namespace MatchingGameDynamique
                     txtBlock[i, j].Text = "?";
                     Grid.SetColumn(txtBlock[i, j], j);
                     Grid.SetRow(txtBlock[i, j], i);
+                    grdMain.Children.Add(txtBlock[i,j]);
                 }
             }
         }
