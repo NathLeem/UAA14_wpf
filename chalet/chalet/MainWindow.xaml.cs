@@ -25,5 +25,10 @@ namespace chalet
             InitializeComponent();
 
         }
+
+        private void btnSortie_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
