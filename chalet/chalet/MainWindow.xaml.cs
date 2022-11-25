@@ -23,12 +23,32 @@ namespace chalet
         public MainWindow()
         {
             InitializeComponent();
-
+            txtNbPers.PreviewTextInput += new TextCompositionEventHandler(VerifEntier);
+            txtDateStart.PreviewTextInput += new TextCompositionEventHandler(VerifDate);
+            txtDateEnd.PreviewTextInput += new TextCompositionEventHandler(VerifDate);
+            btnCalcul.Click += new RoutedEventHandler();
+            btnInit.Click += new RoutedEventHandler();
+            btnSortie.Click += new RoutedEventHandler();
+            rdChalet.Checked += new RoutedEventHandler();
+            rdTente.Checked += new RoutedEventHandler();
+            boxReserv.Checked += new RoutedEventHandler();
         }
 
-        private void btnSortie_Click(object sender, RoutedEventArgs e)
+        public void VerifEntier(object sender, TextCompositionEventArgs e)
         {
+            int entier;
 
+            if (int.TryParse(e.Text,out entier))
+            {
+                entier = int.TryParse(e.Text);
+            }
+        }
+        public void VerifDate(object sender, TextCompositionEventArgs e)
+        {
+            if ()
+            {
+
+            }
         }
     }
 }
