@@ -1,0 +1,36 @@
+﻿<Window x:Class="CalculetteBinaire.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculetteBinaire"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="DarkGreen" Foreground="LightGray" FontSize="50">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Nombre 1"/>
+        <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Nombre 2"/>
+        <TextBox x:Name="tbNbr1" Grid.Column="1" Margin="10"/>
+        <TextBox x:Name="tbNbre2" Grid.Column="1" Grid.Row="1" Margin="10"/>
+        <GroupBox Grid.Column="2" Grid.RowSpan="2">
+            <StackPanel Height="200">
+                <RadioButton x:Name="rdAdd" Content="ADDITION" FontSize="30" Foreground="LightGray" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <RadioButton x:Name="rdSoust" Content="SOUSTRACTION" FontSize="30" Foreground="LightGray" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+            
+        </GroupBox>
+        <Button x:Name="btnCalc" Grid.Row="2" Grid.ColumnSpan="3" Content="CALCULER"/>
+        <TextBlock x:Name="tblResult" Grid.Row="3" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Résultat"/>
+    </Grid>
+</Window>
