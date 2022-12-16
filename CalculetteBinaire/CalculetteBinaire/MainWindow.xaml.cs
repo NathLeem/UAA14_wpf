@@ -24,19 +24,94 @@ namespace CalculetteBinaire
         {
             InitializeComponent();
             tbNbr1.PreviewTextInput += new TextCompositionEventHandler(VerifTexte);
-
-            RemplirTableau();
+            tbNbre2.PreviewTextInput += new TextCompositionEventHandler(VerifTexte);
         }
 
-        public string VerifTexte()
+        public void VerifTexte(object sender,TextCompositionEventArgs e)
         {
-            string nombreBinaire = "";
-
-            return nombreBinaire;
+            if (!EstEntier(e.Text))
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                if (!(e.Text == "1" || e.Text == "0"))
+                {
+                    e.Handled = true;
+                }
+                if (((TextBox)sender).Text.Length > 6)
+                {
+                    e.Handled = true;
+                }
+            }
         }
-        public void RemplirTableau()
+        public ushort[] RemplirTableau(string nombreBinaire)
         {
-            ushort[] tabBin;
+            ushort[] tabBin = new ushort[8];
+            for (int i = 0; 0 < 7; i++)
+            {
+                tabBin[i] = 0;
+            }
+            for (int i = 0; 0 < nombreBinaire.Length - 1; i++)
+            {
+                tabBin[7 - i] = ushort.Parse(nombreBinaire[nombreBinaire.Length - 1 - i].ToString());
+            }
+            return tabBin;
+        }
+        public void Additionner(ushort[] t1, ushort[] t2, ushort[] tRes, bool ok)
+        {
+            ok = true;
+            ushort report = 0;
+            ushort res;
+            tRes = new ushort[8];
+
+            for (int i = 7; i <= 0; i--)
+            {
+                res = ((ushort)(t1[i] + t2[i] + report));
+                if (res / 2 == 0)
+                {
+                    report = 0;
+                }
+                else
+                {
+                    report = 1;
+                }
+                if (res == 1)
+                {
+                    tRes[i] = 1;
+                }
+                else
+                {
+                    if (res % 2 == 1)
+                    {
+                        tRes[i] = 1;
+                    }
+                    else
+                    {
+                        tRes[i] = 0;
+                    }
+                }
+            }
+            if (report == 1)
+            {
+                ok = false;
+            }
+        }
+        public bool EstEntier(string caractere)
+        {
+            bool estEntier;
+            int nombre;
+
+            if (int.TryParse(caractere, out nombre))
+            {
+                estEntier = true;
+            }
+            else
+            {
+                estEntier = false;
+            }
+
+            return estEntier;
         }
     }
 }
