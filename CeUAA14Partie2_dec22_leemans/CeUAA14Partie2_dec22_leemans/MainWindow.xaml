@@ -22,7 +22,6 @@
             <TextBlock Name="TDde" Margin="10">?</TextBlock>
             <Button Margin="10" Content="JOUER"/>
         </StackPanel>
-
         <Grid x:Name="grdBody" Grid.Row="1"/>
     </Grid>
 </Window>

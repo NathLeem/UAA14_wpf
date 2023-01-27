@@ -24,7 +24,7 @@ namespace CalculetteBinaire
         {
             InitializeComponent();
             tbNbr1.PreviewTextInput += new TextCompositionEventHandler(VerifTexte);
-            tbNbre2.PreviewTextInput += new TextCompositionEventHandler(VerifTexte);
+            tbNbr2.PreviewTextInput += new TextCompositionEventHandler(VerifTexte);
         }
 
         public void VerifTexte(object sender,TextCompositionEventArgs e)
@@ -48,11 +48,11 @@ namespace CalculetteBinaire
         public ushort[] RemplirTableau(string nombreBinaire)
         {
             ushort[] tabBin = new ushort[8];
-            for (int i = 0; 0 < 7; i++)
+            for (int i = 0; i < 7; i++)
             {
                 tabBin[i] = 0;
             }
-            for (int i = 0; 0 < nombreBinaire.Length - 1; i++)
+            for (int i = 0; i < nombreBinaire.Length - 1; i++)
             {
                 tabBin[7 - i] = ushort.Parse(nombreBinaire[nombreBinaire.Length - 1 - i].ToString());
             }
@@ -96,6 +96,43 @@ namespace CalculetteBinaire
             {
                 ok = false;
             }
+        }
+        public bool Soustraire(ushort[] t1, ushort[] t2, ushort[] tRes, bool ok)
+        {
+            int[] tTemp = new int[8];
+            tRes = new ushort[8];
+            ok = true;
+            
+            for (int i = 0; i < 7; i++)
+            {
+                tTemp[i] = t1[i] - t2[i];
+            }
+            
+            for (int i = 7; i < 0; i--)
+            {
+                if (tTemp[i] == -1)
+                {
+                    t2[i - 1] = (ushort)(t2[i - 1] + 1);
+                    t1[i] = (ushort)(t1[i] + 2);
+                }
+                if (t1[i] < t2[i])
+                {
+                    t2[i - 1]++;
+                    t1[i] += 2;
+                    tRes[i] = (ushort)(t1[i] - t2[i]);
+                }
+            }
+            
+            if (t1[0] >= t2[0])
+            {
+                tRes[0] = (ushort)(t1[0] - t2[0]);
+            }
+            
+            else
+            {
+                ok = false;
+            }
+            return ok;
         }
         public bool EstEntier(string caractere)
         {

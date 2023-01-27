@@ -27,7 +27,7 @@ namespace CeUAA14Partie2_dec22_leemans
             InitializeComponent();
             Interface();
             SetUpGame();
-            TourJoueur();
+            //TourJoueur();
         }
 
         public void Interface()

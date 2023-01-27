@@ -22,7 +22,7 @@
         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Nombre 1"/>
         <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Nombre 2"/>
         <TextBox x:Name="tbNbr1" Grid.Column="1" Margin="10"/>
-        <TextBox x:Name="tbNbre2" Grid.Column="1" Grid.Row="1" Margin="10"/>
+        <TextBox x:Name="tbNbr2" Grid.Column="1" Grid.Row="1" Margin="10"/>
         <GroupBox Grid.Column="2" Grid.RowSpan="2">
             <StackPanel Height="200">
                 <RadioButton x:Name="rdAdd" Content="ADDITION" FontSize="30" Foreground="LightGray" HorizontalAlignment="Center" VerticalAlignment="Center"/>

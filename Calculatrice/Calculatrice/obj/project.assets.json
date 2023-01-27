@@ -8,28 +8,24 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Nathan\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\200253.asty-moulin\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nathan\\OneDrive\\Documents\\Ecole\\Progra\\UAA14_wpf\\Calculatrice\\Calculatrice\\Calculatrice.csproj",
+      "projectUniqueName": "H:\\6TI\\Progra\\ExGit\\UAA14\\UAA14_wpf\\Calculatrice\\Calculatrice\\Calculatrice.csproj",
       "projectName": "Calculatrice",
-      "projectPath": "C:\\Users\\Nathan\\OneDrive\\Documents\\Ecole\\Progra\\UAA14_wpf\\Calculatrice\\Calculatrice\\Calculatrice.csproj",
-      "packagesPath": "C:\\Users\\Nathan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nathan\\OneDrive\\Documents\\Ecole\\Progra\\UAA14_wpf\\Calculatrice\\Calculatrice\\obj\\",
+      "projectPath": "H:\\6TI\\Progra\\ExGit\\UAA14\\UAA14_wpf\\Calculatrice\\Calculatrice\\Calculatrice.csproj",
+      "packagesPath": "C:\\Users\\200253.asty-moulin\\.nuget\\packages\\",
+      "outputPath": "H:\\6TI\\Progra\\ExGit\\UAA14\\UAA14_wpf\\Calculatrice\\Calculatrice\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Nathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\200253.asty-moulin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -71,7 +67,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.409\\RuntimeIdentifierGraph.json"
       }
     }
   }
